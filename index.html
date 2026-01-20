@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free Swagbucks Money-Making Guide - Learn proven strategies to earn $100-300/month with surveys, cashback, and rewards!">
+    <title>Swagbucks Money-Making Guide - Earn $100-300/Month FREE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&family=Barlow:wght@500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Barlow', sans-serif;
+            background: linear-gradient(135deg, #FFD89B 0%, #19547B 100%);
+            min-height: 100vh;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        /* Floating money animation */
+        .money-rain {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            z-index: 0;
+            overflow: hidden;
+        }
+
+        .money {
+            position: absolute;
+            font-size: 30px;
+            opacity: 0.15;
+            animation: fall linear infinite;
+        }
+
+        .money:nth-child(1) { left: 10%; animation-duration: 15s; animation-delay: 0s; }
+        .money:nth-child(2) { left: 25%; animation-duration: 18s; animation-delay: 2s; }
+        .money:nth-child(3) { left: 40%; animation-duration: 12s; animation-delay: 4s; }
+        .money:nth-child(4) { left: 55%; animation-duration: 20s; animation-delay: 1s; }
+        .money:nth-child(5) { left: 70%; animation-duration: 16s; animation-delay: 3s; }
+        .money:nth-child(6) { left: 85%; animation-duration: 14s; animation-delay: 5s; }
+
+        @keyframes fall {
+            0% {
+                top: -10%;
+                transform: rotate(0deg);
+            }
+            100% {
+                top: 110%;
+                transform: rotate(360deg);
+            }
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+            animation: slideDown 0.8s ease-out;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .logo-container {
+            background: rgba(255, 255, 255, 0.95);
+            display: inline-block;
+            padding: 20px 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            font-family: 'Poppins', sans-serif;
+            font-size: 52px;
+            font-weight: 900;
+            background: linear-gradient(135deg, #FF6B35 0%, #D65108 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: -1px;
+        }
+
+        .money-icon {
+            font-size: 56px;
+            margin-bottom: 10px;
+            filter: drop-shadow(0 5px 15px rgba(255, 107, 53, 0.4));
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+
+        .tagline {
+            font-size: 24px;
+            color: white;
+            font-weight: 700;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+            margin-top: 15px;
+        }
+
+        .main-card {
+            background: white;
+            border-radius: 30px;
+            padding: 50px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            animation: scaleIn 0.8s ease-out 0.2s backwards;
+        }
+
+        @keyframes scaleIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+            color: white;
+            padding: 10px 25px;
+            border-radius: 25px;
+            font-size: 14px;
+            font-weight: 800;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            box-shadow: 0 5px 20px rgba(76, 175, 80, 0.4);
+        }
+
+        h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 40px;
+            color: #2d3748;
+            margin-bottom: 20px;
+            line-height: 1.2;
+            font-weight: 900;
+        }
+
+        .highlight {
+            color: #FF6B35;
+            position: relative;
+        }
+
+        .earnings {
+            background: linear-gradient(135deg, #FFD89B 0%, #FFE5B4 100%);
+            border: 3px solid #FF6B35;
+            padding: 20px;
+            border-radius: 15px;
+            margin: 25px 0;
+            text-align: center;
+        }
+
+        .earnings-amount {
+            font-family: 'Poppins', sans-serif;
+            font-size: 48px;
+            font-weight: 900;
+            color: #D65108;
+            margin: 10px 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .earnings-text {
+            font-size: 18px;
+            color: #2d3748;
+            font-weight: 600;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            color: #718096;
+            margin-bottom: 30px;
+            line-height: 1.7;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+
+        .feature {
+            background: linear-gradient(135deg, #FFF5EB 0%, #FFE5D9 100%);
+            border: 2px solid #FFD89B;
+            padding: 30px 25px;
+            border-radius: 18px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .feature:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(255, 107, 53, 0.25);
+            border-color: #FF6B35;
+        }
+
+        .feature-icon {
+            font-size: 44px;
+            margin-bottom: 15px;
+        }
+
+        .feature-title {
+            font-weight: 800;
+            color: #D65108;
+            margin-bottom: 10px;
+            font-size: 17px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .feature-desc {
+            font-size: 14px;
+            color: #4a5568;
+            line-height: 1.6;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, #FF6B35 0%, #D65108 100%);
+            border-radius: 25px;
+            padding: 45px;
+            margin: 40px 0;
+            text-align: center;
+            color: white;
+            box-shadow: 0 15px 50px rgba(255, 107, 53, 0.5);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-section::after {
+            content: '💰💵💸';
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 40px;
+            opacity: 0.2;
+        }
+
+        .cta-section::before {
+            content: '💳🎁🏆';
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            font-size: 40px;
+            opacity: 0.2;
+        }
+
+        .cta-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: 36px;
+            margin-bottom: 15px;
+            font-weight: 900;
+            position: relative;
+            z-index: 1;
+        }
+
+        .cta-subtitle {
+            font-size: 18px;
+            margin-bottom: 30px;
+            opacity: 0.95;
+            position: relative;
+            z-index: 1;
+        }
+
+        .unlock-btn {
+            background: white;
+            color: #D65108;
+            border: none;
+            padding: 20px 55px;
+            border-radius: 50px;
+            font-size: 19px;
+            font-weight: 900;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            font-family: 'Poppins', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-decoration: none;
+            display: inline-block;
+            position: relative;
+            z-index: 1;
+        }
+
+        .unlock-btn:hover {
+            transform: translateY(-4px) scale(1.05);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+            background: #FFF8DC;
+        }
+
+        .unlock-btn:active {
+            transform: translateY(-2px) scale(1.02);
+        }
+
+        .bonus-section {
+            background: linear-gradient(135deg, #E8F5E9 0%, #C8E6C9 100%);
+            border-left: 6px solid #4CAF50;
+            padding: 30px;
+            border-radius: 15px;
+            margin: 35px 0;
+            border: 2px solid #81C784;
+        }
+
+        .bonus-title {
+            font-weight: 900;
+            color: #2E7D32;
+            margin-bottom: 15px;
+            font-size: 20px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .bonus-list {
+            color: #1B5E20;
+            line-height: 2;
+            padding-left: 20px;
+            font-weight: 600;
+        }
+
+        .bonus-list li {
+            margin-bottom: 8px;
+        }
+
+        .proof-section {
+            background: #F7F9FC;
+            padding: 30px;
+            border-radius: 15px;
+            margin: 30px 0;
+            text-align: center;
+            border: 2px dashed #FFD89B;
+        }
+
+        .proof-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: 22px;
+            font-weight: 800;
+            color: #2d3748;
+            margin-bottom: 20px;
+        }
+
+        .stat-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .stat-box {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            border: 2px solid #FFD89B;
+        }
+
+        .stat-number {
+            font-family: 'Poppins', sans-serif;
+            font-size: 36px;
+            font-weight: 900;
+            color: #FF6B35;
+        }
+
+        .stat-label {
+            font-size: 13px;
+            color: #718096;
+            font-weight: 600;
+            margin-top: 5px;
+        }
+
+        .footer {
+            text-align: center;
+            color: rgba(255, 255, 255, 0.8);
+            padding: 40px 20px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .main-card {
+                padding: 30px 20px;
+            }
+            
+            .logo {
+                font-size: 38px;
+            }
+            
+            h1 {
+                font-size: 32px;
+            }
+            
+            .features,
+            .stat-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .earnings-amount {
+                font-size: 38px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="money-rain">
+        <div class="money">💵</div>
+        <div class="money">💰</div>
+        <div class="money">💸</div>
+        <div class="money">💳</div>
+        <div class="money">💵</div>
+        <div class="money">💰</div>
+    </div>
+
+    <div class="container">
+        <div class="header">
+            <div class="money-icon">💰</div>
+            <div class="logo-container">
+                <div class="logo">SWAGBUCKS</div>
+            </div>
+            <div class="tagline">Proven Money-Making Strategies Inside!</div>
+        </div>
+
+        <div class="main-card">
+            <div class="badge">✅ 100% FREE GUIDE</div>
+            
+            <h1>Earn <span class="highlight">$100-300/Month</span> with Swagbucks!</h1>
+            
+            <div class="earnings">
+                <div class="earnings-text">Average User Monthly Earnings</div>
+                <div class="earnings-amount">$50-$300</div>
+                <div class="earnings-text">💰 Get Your Piece of the Pie! 💰</div>
+            </div>
+
+            <p class="subtitle">
+                Stop leaving money on the table! This comprehensive guide reveals the exact strategies 
+                top Swagbucks users employ to earn serious cash every month. Learn how to maximize surveys, 
+                stack cashback offers, and turn your spare time into real money!
+            </p>
+
+            <div class="proof-section">
+                <div class="proof-title">📊 What's Possible with Swagbucks</div>
+                <div class="stat-grid">
+                    <div class="stat-box">
+                        <div class="stat-number">$5-10</div>
+                        <div class="stat-label">PER DAY</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">1-2</div>
+                        <div class="stat-label">HOURS NEEDED</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">$1,825</div>
+                        <div class="stat-label">YEARLY EXTRA</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon">📋</div>
+                    <div class="feature-title">Survey Secrets</div>
+                    <div class="feature-desc">Qualify more often and earn $2-3 per survey with insider tips</div>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🛍️</div>
+                    <div class="feature-title">Cashback Stacking</div>
+                    <div class="feature-desc">Combine multiple rewards for 20-30% total savings on purchases</div>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">📅</div>
+                    <div class="feature-title">Daily Routine</div>
+                    <div class="feature-desc">Follow our proven schedule to earn $150-300 monthly consistently</div>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">⚡</div>
+                    <div class="feature-title">Quick Start</div>
+                    <div class="feature-desc">Step-by-step guide to earning your first $10 in just 24 hours!</div>
+                </div>
+            </div>
+
+            <div class="bonus-section">
+                <div class="bonus-title">🎁 INCLUDED IN YOUR FREE GUIDE:</div>
+                <ul class="bonus-list">
+                    <li>Complete monthly earnings breakdown by activity ($137-328/month potential)</li>
+                    <li>Survey mastery techniques to qualify 50% more often</li>
+                    <li>Best times to take surveys for maximum availability</li>
+                    <li>Smart redemption strategies to get 10-12% more value</li>
+                    <li>Common mistakes that cost users $30-50/month (avoid these!)</li>
+                    <li>Advanced "streak bonus" strategy for extra free money</li>
+                </ul>
+            </div>
+
+            <div class="cta-section">
+                <div class="cta-title">💸 Get Your FREE Guide Now!</div>
+                <div class="cta-subtitle">
+                    Complete one quick offer to unlock instant access to all money-making strategies!
+                </div>
+                <a href="https://drive.google.com/file/d/1msbfZoAsrgsXGMdXjqNR-z_kV2KwrrHv/view?usp=sharing" target="_blank" class="unlock-btn">
+                    START EARNING TODAY →
+                </a>
+            </div>
+
+            <div style="text-align: center; color: #718096; font-size: 14px; margin-top: 30px;">
+                <p>✨ 100% FREE • No Credit Card Required • Instant Download ✨</p>
+                <p style="margin-top: 10px; font-weight: 600; color: #4CAF50;">Join 1000s Already Earning Extra Income!</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Swagbucks Money-Making Guide | © 2025 | Educational Resource</p>
+        <p style="margin-top: 10px; font-size: 12px;">Not affiliated with Swagbucks LLC | Results may vary | For informational purposes only</p>
+    </div>
+</body>
+</html>
